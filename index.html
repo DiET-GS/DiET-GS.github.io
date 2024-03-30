@@ -211,7 +211,10 @@
       <br>
         <div class="content has-text-justified">
           <p>
-            Our <strong>SOLE</strong> demonstrates open-vocabulary capability by effectively responding to free-form language queries, including visual questions, attributes description and functional description.
+            <strong>Overall framework of SOLE.</strong> SOLE is built on transformer-based instance segmentation model with multimodal adaptations. 
+            For model architecture, backbone features are integrated with per-point CLIP features and subsequently fed into the cross-modality decoder (CMD). 
+            CMD aggregates the point-wise features and textual features into the instance queries, finally segmenting the instances, which are supervised by multimodal associations. 
+            During inference, predicted mask features are combined with the per-point CLIP features, enhancing the open-vocabulary performance.
           </p>
         </div>
       </div>
@@ -219,7 +222,7 @@
 
     <div class="column">
         <div class="content">
-          <img src="static/images/tv.png"
+          <img src="static/images/overall.png"
             class="interpolation-image">
             <center>
             <p>
