@@ -241,8 +241,9 @@
       <br>
         <div class="content has-text-justified">
           <p>
-            Three types of multimodal association instance. For each ground truth instance mask, we first pool the per-point CLIP features to obtain Mask-Visual Association $\mathbf{f}^{\mathrm{MVA}}$. 
-            Subsequently, fMVA is fed into CLIP space captioning model to generate caption and corresponding textual feature f MCA for each mask, termed as Mask-Caption Association. Finally, noun phrases are extracted from mask caption and the embed- dings of them are aggregated via multimodal attention to get Mask-Entity Association fMEA. 
+            <strong>Three types of multimodal association instance.</strong> For each ground truth instance mask, we first pool the per-point CLIP features to obtain Mask-Visual Association $\mathbf{f}^{\mathrm{MVA}}$. 
+            Subsequently, $\mathbf{f}^{\mathrm{MVA}}$ is fed into CLIP space captioning model to generate caption and corresponding textual feature $\mathbf{f}^{\mathrm{MCA}}$ for each mask, termed as Mask-Caption Association. 
+            Finally, noun phrases are extracted from mask caption and the embeddings of them are aggregated via multimodal attention to get Mask-Entity Association $\mathbf{f}^{\mathrm{MEA}}$. 
             The three multimodal associations are used for supervising SOLE to acquire the ability to segment 3D objects with free-form language instructions.
           </p>
         </div>
