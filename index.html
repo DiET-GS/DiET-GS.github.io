@@ -202,7 +202,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
       <div class="column is-full-width">
        
@@ -226,7 +225,29 @@
             class="interpolation-image">
         </div>
       </div>
-  
+
+<div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+    
+      <br>
+        <div class="content has-text-justified">
+          <p>
+            Three types of multimodal association instance. For each ground truth instance mask, we first pool the per-point CLIP features to obtain Mask-Visual Association $\mathbf{f}^{\mathrm{MVA}}$. 
+            Subsequently, fMVA is fed into CLIP space captioning model to generate caption and corresponding textual feature f MCA for each mask, termed as Mask-Caption Association. Finally, noun phrases are extracted from mask caption and the embed- dings of them are aggregated via multimodal attention to get Mask-Entity Association fMEA. 
+            The three multimodal associations are used for supervising SOLE to acquire the ability to segment 3D objects with free-form language instructions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="content">
+          <img src="static/images/mla.png"
+            class="interpolation-image">
+        </div>
+      </div>
 </div>
 </section>
 
