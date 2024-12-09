@@ -46,6 +46,26 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+        .container2 {
+            display: flex;
+            flex-direction: row; /* Ensures horizontal alignment */
+            gap: 20px; /* Space between videos */
+            text-align: center;
+        }
+        .video-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        video {
+            width: 300px; /* Adjust width as needed */
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
 
@@ -158,24 +178,36 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container2">
       <div class="video-box">
             <video autoplay loop muted>
                 <source src="./static/videos/events.MP4" type="video/mp4">
             </video>
-            <div class="title">Event stream</div>
+            <center>
+            <p>
+              Event stream
+            </p>
+          </center>
         </div>
         <div class="video-box">
             <video autoplay loop muted>
                 <source src="./static/videos/events.MP4" type="video/mp4">
             </video>
-            <div class="title">Blur image</div>
+            <center>
+            <p>
+              Blur Image
+            </p>
+          </center>
         </div>
         <div class="video-box">
             <video autoplay loop muted>
                 <source src="./static/videos/events.MP4" type="video/mp4">
             </video>
-            <div class="title">Output</div>
+            <center>
+            <p>
+              Output
+            </p>
+          </center>
         </div>
     </div>
   </div>
