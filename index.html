@@ -206,10 +206,10 @@
       <br>
         <div class="content has-text-justified">
           <p>
-            <strong>Overall framework of SOLE.</strong> SOLE is built on transformer-based instance segmentation model with multimodal adaptations. 
-            For model architecture, backbone features are integrated with per-point CLIP features and subsequently fed into the cross-modality decoder (CMD). 
-            CMD aggregates the point-wise features and textual features into the instance queries, finally segmenting the instances, which are supervised by multimodal associations. 
-            During inference, predicted mask features are combined with the per-point CLIP features, enhancing the open-vocabulary performance.
+            <strong>Overall framework of DiET-GS.</strong> Stage 1 (DiET-GS) optimizes the deblurring 3DGS with %jointly leveraging the event streams and diffusion prior. 
+            To preserve accurate color and clean details, we exploit EDI prior in multiple ways, including color supervision $C$, guidance for fine-grained details $I$ and additional regularization  $\tilde{I}$ with EDI simulation. 
+            Stage 2 (DiET-GS++) is then employed to maximize the effect of diffusion prior with introducing extra learnable parameters $\mathbf{f}_{\mathbf{g}}$. 
+            DiEt-GS++ further refines the rendered images from DiET-GS, effectively enhancing rich edge features. More details are explained in Sec. 4.1 and Sec. 4.2. of the main paper.
           </p>
         </div>
       </div>
@@ -221,31 +221,6 @@
             class="interpolation-image">
         </div>
       </div>
-
-<div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-    
-      <br>
-        <div class="content has-text-justified">
-          <p>
-            <strong>Three types of multimodal association instance.</strong> For each ground truth instance mask, we first pool the per-point CLIP features to obtain Mask-Visual Association $\mathbf{f}^{\mathrm{MVA}}$. 
-            Subsequently, $\mathbf{f}^{\mathrm{MVA}}$ is fed into CLIP space captioning model to generate caption and corresponding textual feature $\mathbf{f}^{\mathrm{MCA}}$ for each mask, termed as Mask-Caption Association. 
-            Finally, noun phrases are extracted from mask caption and the embeddings of them are aggregated via multimodal attention to get Mask-Entity Association $\mathbf{f}^{\mathrm{MEA}}$. 
-            The three multimodal associations are used for supervising SOLE to acquire the ability to segment 3D objects with free-form language instructions.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-        <div class="content">
-          <img src="static/images/mla.png"
-            class="interpolation-image">
-        </div>
-      </div>
-</div>
 </section>
 
 <section class="section">
