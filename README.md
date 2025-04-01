@@ -1,14 +1,17 @@
 # DiET-GS 🫨
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [DiET-GS website](https://diet-gs.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find DiET-GS useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{lee2025dietgsdiffusionpriorevent,
+      title={DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D Gaussian Splatting}, 
+      author={Seungjun Lee and Gim Hee Lee},
+      year={2025},
+      eprint={2503.24210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.24210}, 
 }
 ```
 
