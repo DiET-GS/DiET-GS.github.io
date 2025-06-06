@@ -4,10 +4,11 @@ This is the repository that contains source code for the [DiET-GS website](https
 
 If you find DiET-GS useful for your work please cite:
 ```
-@article{lee2025diet,
+@inproceedings{lee2025diet,
   title={DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D Gaussian Splatting},
   author={Lee, Seungjun and Lee, Gim Hee},
-  journal={arXiv preprint arXiv:2503.24210},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={21739--21749},
   year={2025}
 }
 ```
